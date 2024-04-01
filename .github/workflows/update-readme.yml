@@ -26,8 +26,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "Update README Action"
           git add README.md
           git commit -m "Update README with latest blog posts"
-          git push https://${{ secrets.JKB_WF_TOKEN }}@github.com/jigarkkarangiya/jigarkarangiya-blogs.git
+          if [[ `git status --porcelain` ]]; then git add . && git commit -m "README.md updated by action" && git push; fi
