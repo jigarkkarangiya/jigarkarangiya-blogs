@@ -34,6 +34,6 @@ jobs:
           git config --local user.name "Update README Action"
           git add README.md
           git commit -m "Update README with latest blog posts"
-          git remote set-url --push origin https://jigarkkarangiya:${GITHUB_TOKEN}@github.com/jigarkkarangiya/jigarkarangiya-blogs.git
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.JKB_WF_TOKEN }}
