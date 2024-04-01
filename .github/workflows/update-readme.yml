@@ -24,13 +24,12 @@ jobs:
       - name: Run script to update README
         run: python update_readme.py
 
-      - name: Commit changes
+      - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions@github.com"
           git config --local user.name "Update README Action"
           git add README.md
           git commit -m "Update README with latest blog posts"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.JKB_WF_TOKEN }}
+          git remote set-url --push origin https://jigarkkarangiya:$GITHUB_TOKEN@github.comjigarkkarangiya/jigarkarangiya-blogs.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.JKB_WF_TOKEN }}
