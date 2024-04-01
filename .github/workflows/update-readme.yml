@@ -31,3 +31,5 @@ jobs:
           git add README.md
           git commit -m "Update README with latest blog posts"
           git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.JKB_WF_TOKEN }}
