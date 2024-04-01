@@ -30,5 +30,4 @@ jobs:
           git config --local user.name "Update README Action"
           git add README.md
           git commit -m "Update README with latest blog posts"
-          git remote add origin https://github.com/jigarkkarangiya/jigarkarangiya-blogs.git
           git push origin HEAD:main
