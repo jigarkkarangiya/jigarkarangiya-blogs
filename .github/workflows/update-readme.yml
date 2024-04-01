@@ -36,5 +36,6 @@ jobs:
           git commit -am 'Re-build README.md' || echo "No changes to commit"
           git remote set-url --push origin https://jigarkkarangiya:${GITHUB_TOKEN}@github.com/jigarkkarangiya/jigarkarangiya-blogs.git
           cat README.md
+          git pull origin main
         env:
           GITHUB_TOKEN: ${{ secrets.JKB_WF_TOKEN }}
