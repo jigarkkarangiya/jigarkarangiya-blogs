@@ -30,4 +30,4 @@ jobs:
           git config --local user.name "Update README Action"
           git add README.md
           git commit -m "Update README with latest blog posts"
-          if [[ `git status --porcelain` ]]; then git add . && git commit -m "README.md updated by action" && git push; fi
+          git push
