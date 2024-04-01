@@ -2,7 +2,7 @@ name: Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Run daily at midnight
+    - cron: '0 10 * * *' # Run daily at 10 AM
   workflow_dispatch: # Enable manual triggering
 
 jobs:
@@ -30,4 +30,5 @@ jobs:
           git config --local user.name "Update README Action"
           git add README.md
           git commit -m "Update README with latest blog posts"
-          git push https://github.com/jigarkkarangiya/jigarkarangiya-blogs.git HEAD:main
+          git remote add origin https://github.com/jigarkkarangiya/jigarkarangiya-blogs.git
+          git push origin HEAD:main
