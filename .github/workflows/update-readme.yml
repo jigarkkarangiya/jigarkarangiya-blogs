@@ -30,6 +30,7 @@ jobs:
           git config --local user.name "Update README Action"
           git add README.md
           git commit -m "Update README with latest blog posts"
-          git push origin HEAD:main
-        env:
-          GH_TOKEN: ${{ secrets.JKB_WF_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.JKB_WF_TOKEN }}
