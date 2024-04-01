@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '0 10 * * *' # Run daily at 10 AM
   workflow_dispatch: # Enable manual triggering
+  push:
+    branches:
+      - main
+
 
 jobs:
   update-readme:
@@ -12,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+        token: ${{secrets.JKB_WF_TOKEN}}
 
       - name: Set up Python
         uses: actions/setup-python@v2
