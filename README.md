@@ -12,4 +12,3 @@ All Magento 2 Blogs from Jigar Karangiya
 | Multi Website Domain Setup in Magento 2 using DDEV | https://jigarkarangiya.com/multi-website-domain-setup-for-magento-2-in-using-ddev/ |
 | Allow Additional Permissions in Company User Roles by default in Magento 2 B2B | https://jigarkarangiya.com/allow-additional-permissions-in-company-user-roles-by-default-in-magento-2-b2b/ |
 | DDEV Docker: How to install additional PHP extensions in the DDEV project? | https://jigarkarangiya.com/ddev-docker-how-to-install-additional-php-extensions-in-the-ddev-project/ |
-From https://github.com/jigarkkarangiya/jigarkarangiya-blogs
