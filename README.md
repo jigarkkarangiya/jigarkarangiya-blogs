@@ -1,4 +1,4 @@
-# jigarkarangiya-blogs
+# Jigar Karangiya-Blogs
 All Magento 2 Blogs from Jigar Karangiya
 | Blog Name | Blog URL |
 | --------- | -------- |
